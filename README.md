@@ -8,10 +8,16 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+stone+Mason;Rust+%E7%88%B1%E5%A5%BD%E8%80%85+%7C+Rustacean+%F0%9F%A6%80;Embedded+Systems+Developer+%F0%9F%94%A7;AI+%26+LLM+Integration+%F0%9F%A4%96;GUI+App+Builder+%F0%9F%96%A5%EF%B8%8F" alt="Typing SVG"/>
 </a>
 
-<!-- ─── Profile Views ─── -->
 <br/>
-<img src="https://komarev.com/ghpvc/?username=AnlangA&style=for-the-badge&color=0e75b6" alt="Profile Views"/>
-<img src="https://img.shields.io/github/followers/AnlangA?style=for-the-badge&color=0e75b6&logo=github" alt="Followers"/>
+
+<!-- ─── Social Badges ─── -->
+<a href="https://github.com/AnlangA?tab=followers">
+  <img src="https://img.shields.io/github/followers/AnlangA?style=for-the-badge&color=0e75b6&logo=github&label=Followers" alt="Followers"/>
+</a>
+<img src="https://komarev.com/ghpvc/?username=AnlangA&style=for-the-badge&color=0e75b6&label=Profile+Views" alt="Profile Views"/>
+<a href="https://github.com/AnlangA?tab=repositories">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/AnlangA&query=$.public_repos&label=Repositories&style=for-the-badge&color=0e75b6&logo=github" alt="Repositories"/>
+</a>
 
 </div>
 
@@ -49,12 +55,30 @@ const ME: Developer = Developer {
 <div align="center">
 
 ### 语言 · Languages
+
 <img src="https://skillicons.dev/icons?i=rust,c,cpp&theme=dark" height="50" alt="Languages"/>
 
+<br/>
+
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
 ### 框架 & 工具 · Frameworks & Tools
+
 <img src="https://skillicons.dev/icons?i=linux,vscode,git,github,cmake&theme=dark" height="50" alt="Tools"/>
 
+<br/>
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![VSCode](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
+![Tokio](https://img.shields.io/badge/Tokio-000000?style=flat-square&logo=rust&logoColor=white)
+![egui](https://img.shields.io/badge/egui-5A4FCF?style=flat-square&logo=rust&logoColor=white)
+
 ### 领域 · Domains
+
 | 🤖 AI / LLM | 🔧 Embedded | 🎮 GUI | 🌐 Network |
 |:-----------:|:-----------:|:------:|:---------:|
 | `axum` · `tokio` | `ESP32-S3` · `GD32H7` | `egui` · `bevy` | `modbus` · `TCP` |
@@ -68,10 +92,10 @@ const ME: Developer = Developer {
 
 <div align="center">
 
-> Statistics across **43** public repositories
+> Statistics across public repositories
 
-<!-- Language breakdown pie-style using top-langs card -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnlangA&layout=donut&theme=tokyonight&hide_border=true&langs_count=8&size_weight=0.5&count_weight=0.5&exclude_repo=AnlangA" height="220" alt="Top Languages"/>
+<!-- Top Languages card — using compact layout for reliable language icon display -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnlangA&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&size_weight=0.5&count_weight=0.5&card_width=445" height="200" alt="Top Languages"/>
 
 <!-- Manual breakdown bar for clarity -->
 
@@ -90,12 +114,20 @@ const ME: Developer = Developer {
 ## 📈 GitHub 统计 · GitHub Stats
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=AnlangA&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github" height="180" alt="GitHub Stats"/>
-<img src="https://github-readme-streak-stats.herokuapp.com?user=AnlangA&theme=tokyonight&hide_border=true&date_format=Y.n.j" height="180" alt="GitHub Streak"/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=AnlangA&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&include_all_commits=true" height="185" alt="GitHub Stats"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=AnlangA&theme=tokyonight&hide_border=true&date_format=Y.n.j" height="185" alt="GitHub Streak"/>
+
 </div>
 
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnlangA&theme=tokyo-night&hide_border=true&area=true" width="95%" alt="Activity Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnlangA&theme=tokyo-night&hide_border=true&area=true&area_color=58A6FF" width="95%" alt="Activity Graph"/>
+</div>
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=AnlangA&theme=tokyonight&no-frame=true&column=7&margin-w=10)](https://github.com/AnlangA)
+
 </div>
 
 ---
@@ -105,24 +137,24 @@ const ME: Developer = Developer {
 <div align="center">
 
 <a href="https://github.com/AnlangA/glm-proxy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=glm-proxy&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=glm-proxy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/zhipuai-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=zhipuai-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=zhipuai-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 <a href="https://github.com/AnlangA/deepseek-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=deepseek-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=deepseek-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/serial_bevy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=serial_bevy&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=serial_bevy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 <a href="https://github.com/AnlangA/egui-sgr">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=egui-sgr&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=egui-sgr&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/number-conversion-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=number-conversion-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=number-conversion-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 </div>
