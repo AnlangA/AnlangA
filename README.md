@@ -105,24 +105,24 @@ const ME: Developer = Developer {
 <div align="center">
 
 <a href="https://github.com/AnlangA/glm-proxy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=glm-proxy&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=glm-proxy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/zhipuai-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=zhipuai-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=zhipuai-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 <a href="https://github.com/AnlangA/deepseek-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=deepseek-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=deepseek-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/serial_bevy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=serial_bevy&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=serial_bevy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 <a href="https://github.com/AnlangA/egui-sgr">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=egui-sgr&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=egui-sgr&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 <a href="https://github.com/AnlangA/number-conversion-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=number-conversion-rs&theme=tokyonight&hide_border=true" height="130"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=number-conversion-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
 </a>
 
 </div>
