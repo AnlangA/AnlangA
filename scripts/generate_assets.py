@@ -116,19 +116,19 @@ def generate_hero_banner() -> None:
   <text x="40" y="132" class="sans" font-size="15" font-weight="600" fill="#E6EDF3">
     Systems &amp; Embedded Rust Architect
     <tspan fill="#484F58" dx="8">·</tspan>
-    <tspan fill="#9CA3AF" font-weight="400" dx="8">系统级 Rust / 嵌入式 Linux BSP / 大模型基建 / 工业协议工程</tspan>
+    <tspan fill="#9CA3AF" font-weight="400" dx="8">系统级 Rust / 嵌入式 Linux BSP / 端侧异构推理 / 工业协议工程</tspan>
   </text>
 
   <!-- Philosophy / Engineering Statement -->
   <rect x="40" y="149" width="3" height="38" rx="1.5" fill="url(#amberAccent)"/>
   <text x="54" y="164" class="mono" font-size="11.5" fill="#9CA3AF">
-    "Memory safety without garbage collection; deterministic control from bare-metal MCUs to cloud LLM gateways."
+    "Memory safety without garbage collection; deterministic control from bare-metal MCUs to edge NPU &amp; LLM gateways."
   </text>
   <text x="54" y="183" class="sans" font-size="12" fill="#6E7681">
-    深耕高可靠嵌入式系统（RK3588 / GD32H7 / ESP32-S3）、工业现场总线（EtherCAT / Modbus / OCPP）与纯 Rust AI 基础设施。
+    深耕高可靠嵌入式系统（RK3588 / GD32H7 / ESP32-S3）、异构加速（RKNPU / Vulkan Burn）与工业现场总线（EtherCAT / Modbus）。
   </text>
 
-  <!-- Bottom 4-Column Architectural Spec Strip (3 stacked lines per column -> zero horizontal collision) -->
+  <!-- Bottom 4-Column Architectural Spec Strip -->
   <line x1="40" y1="206" x2="840" y2="206" stroke="#1B2232" stroke-width="1"/>
 
   <!-- Column 1 -->
@@ -144,16 +144,16 @@ def generate_hero_banner() -> None:
   <g transform="translate(262, 220)">
     <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">02 // SILICON &amp; KERNEL BSP</text>
     <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">RK3588 · GD32H7 · ESP32</text>
-    <text x="0" y="51" class="mono" font-size="11" fill="#38BDF8">Mainline Linux v7.2 · Zephyr</text>
+    <text x="0" y="51" class="mono" font-size="11" fill="#38BDF8">Mainline Linux v7.2 · RKNPU2</text>
   </g>
 
   <line x1="478" y1="216" x2="478" y2="278" stroke="#1B2232" stroke-width="1"/>
 
   <!-- Column 3 -->
   <g transform="translate(498, 220)">
-    <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">03 // INDUSTRIAL &amp; AI INFRA</text>
-    <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">EtherCAT · LLM Gateways</text>
-    <text x="0" y="51" class="mono" font-size="11" fill="#10B981">CoE/PDO · Axum 0.8 · Burn GPU</text>
+    <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">03 // EDGE AI &amp; FIELDBUS</text>
+    <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">Burn · EtherCAT · LLM</text>
+    <text x="0" y="51" class="mono" font-size="11" fill="#10B981">NPU/Vulkan · CoE/PDO · Axum</text>
   </g>
 
   <line x1="710" y1="216" x2="710" y2="278" stroke="#1B2232" stroke-width="1"/>
@@ -193,7 +193,7 @@ def generate_system_architecture() -> None:
   <!-- Outer Container -->
   <rect x="1" y="1" width="878" height="358" rx="14" fill="url(#cardBg)" stroke="#1E2534" stroke-width="1.2"/>
 
-  <!-- Section Header (Using single text + tspan so zero overlap is guaranteed) -->
+  <!-- Section Header -->
   <text x="28" y="33" class="mono" font-size="11" fill="#E06C3A" font-weight="600">
     01 // ARCHITECTURE MATRIX
     <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">四维工程技术体系 · Full-Stack Systems Engineering</tspan>
@@ -232,24 +232,24 @@ def generate_system_architecture() -> None:
     <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
     <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#38BDF8"/>
 
-    <text x="18" y="25" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">02 · AI INFRA &amp; EDGE INFERENCE</text>
-    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">SDK / 网关 / 端侧部署</text>
-    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">大模型基础设施与端侧异构推理</text>
-    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">纯 Rust 类型安全 LLM SDK 矩阵、高并发代理网关与 Vulkan 量化推理</text>
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">02 · EDGE HETEROGENEOUS AI &amp; LLM</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">NPU / GPU / 异步网关</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">端侧异构推理与大模型基础设施</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">Rust Burn 跨计算单元 (CPU/PanVK/RKNPU) 推理、LLM SDK 与网关</text>
 
     <!-- Tech Pills -->
     <g transform="translate(18, 86)">
-      <rect x="0" y="0" width="88" height="24" rx="5" class="pill-cyan"/>
-      <text x="44" y="15.5" class="mono" font-size="11" fill="#38BDF8" text-anchor="middle">Axum 0.8</text>
+      <rect x="0" y="0" width="92" height="24" rx="5" class="pill-cyan"/>
+      <text x="46" y="15.5" class="mono" font-size="11" fill="#38BDF8" text-anchor="middle">Burn 0.22</text>
 
-      <rect x="96" y="0" width="104" height="24" rx="5" class="pill"/>
-      <text x="148" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Zhipu/OpenAI</text>
+      <rect x="100" y="0" width="90" height="24" rx="5" class="pill"/>
+      <text x="145" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">RKNPU INT8</text>
 
-      <rect x="208" y="0" width="84" height="24" rx="5" class="pill"/>
-      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Burn GPU</text>
+      <rect x="198" y="0" width="84" height="24" rx="5" class="pill"/>
+      <text x="240" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Axum 0.8</text>
 
-      <rect x="300" y="0" width="88" height="24" rx="5" class="pill"/>
-      <text x="344" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">Qwen3 GGUF</text>
+      <rect x="290" y="0" width="98" height="24" rx="5" class="pill"/>
+      <text x="339" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">Zhipu/OpenAI</text>
     </g>
   </g>
 
@@ -285,9 +285,9 @@ def generate_system_architecture() -> None:
     <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#F59E0B"/>
 
     <text x="18" y="25" class="mono" font-size="10.5" fill="#F59E0B" font-weight="600">04 · NATIVE GUI WORKBENCHES</text>
-    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">高帧率渲染 / 研发工具</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">DRM 直驱 / 研发工具</text>
     <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">高性能原生桌面与工程调试软件</text>
-    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">基于 egui 与 Bevy 引擎打造低延迟串口波形仪、XML/EXI 及证书工作台</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">基于 Slint KMS、egui 与 Bevy 打造低延迟串口波形仪及工程工作台</text>
 
     <!-- Tech Pills -->
     <g transform="translate(18, 86)">
@@ -298,7 +298,7 @@ def generate_system_architecture() -> None:
       <text x="150" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Bevy Engine</text>
 
       <rect x="204" y="0" width="92" height="24" rx="5" class="pill"/>
-      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Serial/Plot</text>
+      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Slint KMS</text>
 
       <rect x="304" y="0" width="84" height="24" rx="5" class="pill"/>
       <text x="346" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">X.509/EXI</text>
@@ -340,7 +340,7 @@ def generate_telemetry_stats() -> None:
   <!-- Outer Frame -->
   <rect x="1" y="1" width="878" height="266" rx="14" fill="url(#tBg)" stroke="#1E2534" stroke-width="1.2"/>
 
-  <!-- Header (Single text + tspan so zero overlap is guaranteed) -->
+  <!-- Header -->
   <text x="28" y="33" class="mono" font-size="11" fill="#38BDF8" font-weight="600">
     02 // CODEBASE TELEMETRY &amp; LANGUAGE SPECTRUM
     <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">研发遥测与代码生态占比</tspan>
@@ -407,7 +407,7 @@ def generate_telemetry_stats() -> None:
     <g transform="translate(20, 66)">
       <circle cx="6" cy="-4" r="4.5" fill="#E06C3A"/>
       <text x="18" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Rust</text>
-      <text x="60" y="0" class="mono" font-size="11" fill="#8B949E">40 repos · SDKs / BSP / EtherCAT / GUI</text>
+      <text x="60" y="0" class="mono" font-size="11" fill="#8B949E">40 repos · Burn NPU / BSP / EtherCAT / SDKs</text>
       <text x="396" y="0" class="mono" font-size="12" font-weight="700" fill="#F0883E" text-anchor="end">69.0%</text>
       <rect x="0" y="7" width="396" height="4" rx="2" fill="#171D29"/>
       <rect x="0" y="7" width="273" height="4" rx="2" fill="url(#rustBar)"/>
@@ -443,6 +443,138 @@ def generate_telemetry_stats() -> None:
   </g>
 </svg>"""
     write_svg("telemetry-stats.svg", svg)
+
+
+def generate_featured_burn_rk3588() -> None:
+    """Full-width spotlight card for AnlangA/burn-mnist-rk3588 with 5-backend benchmark telemetry."""
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 236" width="100%">
+  <defs>
+    <linearGradient id="spotBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="55%" stop-color="#0F1523"/>
+      <stop offset="100%" stop-color="#0B101B"/>
+    </linearGradient>
+    <radialGradient id="spotGlow" cx="78%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#E06C3A" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="npuGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E06C3A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <style>
+      .sans {{ font-family: {FONT_SANS}; }}
+      .mono {{ font-family: {FONT_MONO}; }}
+      .pill {{ fill: #141B29; stroke: #263248; stroke-width: 1; }}
+      .pill-hi {{ fill: #1D1616; stroke: #6B3825; stroke-width: 1; }}
+    </style>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect x="1" y="1" width="878" height="234" rx="14" fill="url(#spotBg)" stroke="#263248" stroke-width="1.2"/>
+  <rect x="1" y="1" width="878" height="234" rx="14" fill="url(#spotGlow)"/>
+  <rect x="1" y="22" width="3.5" height="46" rx="1.75" fill="#E06C3A"/>
+
+  <!-- Left Column: Research & Architecture Details (x=28..485) -->
+  <g transform="translate(28, 22)">
+    <rect x="0" y="0" width="166" height="20" rx="5" fill="#1D1616" stroke="#6B3825" stroke-width="1"/>
+    <text x="83" y="13.5" class="mono" font-size="10" fill="#F0883E" text-anchor="middle" font-weight="600" letter-spacing="0.8">★ RESEARCH SPOTLIGHT</text>
+    <text x="178" y="14" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">RK3588 HETEROGENEOUS AI BENCHMARK</text>
+
+    <text x="0" y="46" class="sans" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="-0.3">burn-mnist-rk3588</text>
+    <text x="210" y="45" class="mono" font-size="11" fill="#10B981">● Rust 2024 · Burn 0.22.1 · RKNPU2</text>
+
+    <text x="0" y="72" class="sans" font-size="13" font-weight="600" fill="#E6EDF3">
+      面向瑞芯微 RK3588 (CPU / Mali-G610 / 3-Core NPU) 的跨计算单元可复现推理框架
+    </text>
+    <text x="0" y="93" class="sans" font-size="11.5" fill="#8B949E">
+      基于主线 Linux 7.2.5 (panthor + rknpu)，提出 W=32 零拷贝 DMA 对齐与 RKNB 三核并发流水线，
+    </text>
+    <text x="0" y="111" class="sans" font-size="11.5" fill="#8B949E">
+      内置 Slint LinuxKMS/DRM 60 FPS 板端交互识别系统、五后端硬件计数器评测与完整学术论文。
+    </text>
+
+    <!-- Bottom Tech Stack Pills -->
+    <g transform="translate(0, 128)">
+      <rect x="0" y="0" width="88" height="24" rx="5" class="pill-hi"/>
+      <text x="44" y="15.5" class="mono" font-size="10.5" fill="#F0883E" text-anchor="middle">Burn 0.22.1</text>
+
+      <rect x="96" y="0" width="94" height="24" rx="5" class="pill"/>
+      <text x="143" y="15.5" class="mono" font-size="10.5" fill="#34D399" text-anchor="middle">3-Core RKNPU</text>
+
+      <rect x="198" y="0" width="92" height="24" rx="5" class="pill"/>
+      <text x="244" y="15.5" class="mono" font-size="10.5" fill="#38BDF8" text-anchor="middle">Mesa PanVK</text>
+
+      <rect x="298" y="0" width="102" height="24" rx="5" class="pill"/>
+      <text x="349" y="15.5" class="mono" font-size="10.5" fill="#C9D1D9" text-anchor="middle">Slint DRM 60Hz</text>
+
+      <rect x="408" y="0" width="90" height="24" rx="5" class="pill"/>
+      <text x="453" y="15.5" class="mono" font-size="10.5" fill="#9CA3AF" text-anchor="middle">Linux 7.2.5</text>
+    </g>
+
+    <!-- Key Research Findings Strip -->
+    <text x="0" y="176" class="mono" font-size="10.5" fill="#8B949E">
+      <tspan fill="#10B981" font-weight="700">35,975 samples/s</tspan> (B=256 INT8)
+      <tspan fill="#484F58" dx="5">·</tspan>
+      <tspan fill="#F0883E" font-weight="700" dx="5">88.5 µs</tspan> Pure NPU
+      <tspan fill="#484F58" dx="5">·</tspan>
+      <tspan fill="#38BDF8" font-weight="700" dx="5">98.66%</tspan> Accuracy
+    </text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="544" y1="22" x2="544" y2="214" stroke="#1E2738" stroke-width="1"/>
+
+  <!-- Right Column: 5-Backend Quantitative Latency Benchmark (B=1) -->
+  <g transform="translate(564, 22)">
+    <text x="0" y="14" class="mono" font-size="10.5" fill="#C9D1D9" font-weight="600">5-BACKEND LATENCY (B=1)</text>
+    <text x="292" y="14" class="mono" font-size="10" fill="#10B981" text-anchor="end">LOWER IS FASTER</text>
+    <line x1="0" y1="24" x2="292" y2="24" stroke="#1E2738" stroke-width="1"/>
+
+    <!-- Bar 1: RKNPU INT8 -->
+    <g transform="translate(0, 38)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#F0F6FC" font-weight="700">RKNPU INT8 (Zero-Copy)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#34D399" font-weight="700" text-anchor="end">0.163 ms (35.8x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="26" height="6" rx="3" fill="url(#npuGrad)"/>
+    </g>
+
+    <!-- Bar 2: RKNPU FP16 -->
+    <g transform="translate(0, 74)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#E6EDF3">RKNPU FP16 (3-Core)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#10B981" font-weight="600" text-anchor="end">0.184 ms (31.7x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="32" height="6" rx="3" fill="#10B981"/>
+    </g>
+
+    <!-- Bar 3: CPU NEON + L3 -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#E6EDF3">CPU NEON (3MB L3 Cache)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#F0883E" font-weight="600" text-anchor="end">0.982 ms (5.95x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="84" height="6" rx="3" fill="url(#amberGrad)"/>
+    </g>
+
+    <!-- Bar 4: Mali-G610 Vulkan -->
+    <g transform="translate(0, 146)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#9CA3AF">Mali-G610 Vulkan (PanVK)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#38BDF8" text-anchor="end">3.116 ms (1.87x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="172" height="6" rx="3" fill="#0284C7"/>
+    </g>
+
+    <!-- Bar 5: Mali-G610 GLES -->
+    <g transform="translate(0, 178)">
+      <text x="0" y="10" class="mono" font-size="10" fill="#6E7681">Mali-G610 GLES (Panfrost) · 5.840 ms (1.0x Baseline)</text>
+    </g>
+  </g>
+</svg>"""
+    write_svg("featured-burn-rk3588.svg", svg)
 
 
 def generate_project_card(
@@ -506,7 +638,7 @@ def generate_project_card(
   <!-- Tech Tags -->
   {tags_svg}
 
-  <!-- Right-Aligned Language Indicator (never clips!) -->
+  <!-- Right-Aligned Language Indicator -->
   <text x="410" y="137" class="mono" font-size="11" fill="#8B949E" text-anchor="end">
     <tspan fill="{lang_color}">●</tspan> {lang}
   </text>
@@ -532,7 +664,7 @@ def generate_projects_header() -> None:
     03 // FLAGSHIP ENGINEERING WORKS
     <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">核心开源代表作 · Click any card to inspect repository</tspan>
   </text>
-  <text x="852" y="31" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">SELECTED CRATES [01–06]</text>
+  <text x="852" y="31" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">SPOTLIGHT + SELECTED CRATES</text>
 </svg>"""
     write_svg("section-projects.svg", svg)
 
@@ -574,6 +706,7 @@ def main() -> None:
     generate_system_architecture()
     generate_telemetry_stats()
     generate_projects_header()
+    generate_featured_burn_rk3588()
 
     projects = [
         dict(

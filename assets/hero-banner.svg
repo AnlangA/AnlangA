@@ -93,19 +93,19 @@
   <text x="40" y="132" class="sans" font-size="15" font-weight="600" fill="#E6EDF3">
     Systems &amp; Embedded Rust Architect
     <tspan fill="#484F58" dx="8">·</tspan>
-    <tspan fill="#9CA3AF" font-weight="400" dx="8">系统级 Rust / 嵌入式 Linux BSP / 大模型基建 / 工业协议工程</tspan>
+    <tspan fill="#9CA3AF" font-weight="400" dx="8">系统级 Rust / 嵌入式 Linux BSP / 端侧异构推理 / 工业协议工程</tspan>
   </text>
 
   <!-- Philosophy / Engineering Statement -->
   <rect x="40" y="149" width="3" height="38" rx="1.5" fill="url(#amberAccent)"/>
   <text x="54" y="164" class="mono" font-size="11.5" fill="#9CA3AF">
-    "Memory safety without garbage collection; deterministic control from bare-metal MCUs to cloud LLM gateways."
+    "Memory safety without garbage collection; deterministic control from bare-metal MCUs to edge NPU &amp; LLM gateways."
   </text>
   <text x="54" y="183" class="sans" font-size="12" fill="#6E7681">
-    深耕高可靠嵌入式系统（RK3588 / GD32H7 / ESP32-S3）、工业现场总线（EtherCAT / Modbus / OCPP）与纯 Rust AI 基础设施。
+    深耕高可靠嵌入式系统（RK3588 / GD32H7 / ESP32-S3）、异构加速（RKNPU / Vulkan Burn）与工业现场总线（EtherCAT / Modbus）。
   </text>
 
-  <!-- Bottom 4-Column Architectural Spec Strip (3 stacked lines per column -> zero horizontal collision) -->
+  <!-- Bottom 4-Column Architectural Spec Strip -->
   <line x1="40" y1="206" x2="840" y2="206" stroke="#1B2232" stroke-width="1"/>
 
   <!-- Column 1 -->
@@ -121,16 +121,16 @@
   <g transform="translate(262, 220)">
     <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">02 // SILICON &amp; KERNEL BSP</text>
     <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">RK3588 · GD32H7 · ESP32</text>
-    <text x="0" y="51" class="mono" font-size="11" fill="#38BDF8">Mainline Linux v7.2 · Zephyr</text>
+    <text x="0" y="51" class="mono" font-size="11" fill="#38BDF8">Mainline Linux v7.2 · RKNPU2</text>
   </g>
 
   <line x1="478" y1="216" x2="478" y2="278" stroke="#1B2232" stroke-width="1"/>
 
   <!-- Column 3 -->
   <g transform="translate(498, 220)">
-    <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">03 // INDUSTRIAL &amp; AI INFRA</text>
-    <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">EtherCAT · LLM Gateways</text>
-    <text x="0" y="51" class="mono" font-size="11" fill="#10B981">CoE/PDO · Axum 0.8 · Burn GPU</text>
+    <text x="0" y="11" class="mono" font-size="10" fill="#6E7681" letter-spacing="1.2">03 // EDGE AI &amp; FIELDBUS</text>
+    <text x="0" y="33" class="sans" font-size="15.5" font-weight="700" fill="#F0F6FC">Burn · EtherCAT · LLM</text>
+    <text x="0" y="51" class="mono" font-size="11" fill="#10B981">NPU/Vulkan · CoE/PDO · Axum</text>
   </g>
 
   <line x1="710" y1="216" x2="710" y2="278" stroke="#1B2232" stroke-width="1"/>

@@ -15,5 +15,5 @@
     03 // FLAGSHIP ENGINEERING WORKS
     <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">核心开源代表作 · Click any card to inspect repository</tspan>
   </text>
-  <text x="852" y="31" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">SELECTED CRATES [01–06]</text>
+  <text x="852" y="31" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">SPOTLIGHT + SELECTED CRATES</text>
 </svg>

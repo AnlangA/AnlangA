@@ -20,6 +20,13 @@
 <!-- ─── 03 // FLAGSHIP ENGINEERING WORKS ─── -->
 <img src="./assets/section-projects.svg" width="100%" alt="03 // Flagship Engineering Works"/>
 
+<!-- Research & Engineering Spotlight: burn-mnist-rk3588 -->
+<p align="center">
+  <a href="https://github.com/AnlangA/burn-mnist-rk3588">
+    <img src="./assets/featured-burn-rk3588.svg" width="100%" alt="burn-mnist-rk3588 — Heterogeneous Neural Network Inference on Rockchip RK3588 across Multi-Core CPU, Mali-G610 GPU, and 3-Core RKNPU"/>
+  </a>
+</p>
+
 <p align="center">
   <a href="https://github.com/AnlangA/bbcom">
     <img src="./assets/project-bbcom.svg" width="49%" alt="bbcom — Cross-Platform Serial & Protocol Workbench"/>
@@ -55,14 +62,14 @@
 
 | 领域 · Domain | 核心项目 · Repository | 技术栈 · Stack | 工程定位与架构特性 · Engineering Specification |
 | :--- | :--- | :--- | :--- |
+| **Edge AI & BSP** | [**`burn-mnist-rk3588`**](https://github.com/AnlangA/burn-mnist-rk3588) | `Rust` · `Burn 0.22` · `RKNPU2` | **RK3588 异构计算（CPU / Mali-G610 / 3-Core NPU）五后端推理基准与零拷贝 DMA 框架（0.163 ms / 35,975 samples/s + Slint DRM 60FPS GUI）** |
+| **Edge AI & BSP** | [**`atk-dlrk3588-bsp`**](https://github.com/AnlangA/atk-dlrk3588-bsp) | `Rust` · `Linux v7.2.5` | 正点原子 RK3588 主线内核 / U-Boot 板级支持包，含板级 DTS 与纯 Rust UART/RS485 字符设备驱动 |
+| **Edge AI & BSP** | [**`qwen3-rk3588-colab`**](https://github.com/AnlangA/qwen3-rk3588-colab) | `Python` · `GGUF` · `Vulkan` | Qwen3-1.7B BF16 转 Q4_K_M GGUF 量化流水线与 RK3588 Vulkan GPU 端侧推理验证 |
+| **Edge AI & BSP** | [**`gd32h759boot`**](https://github.com/AnlangA/gd32h759boot) / [**`cortex-m7-rs`**](https://github.com/AnlangA/cortex-m7-rs-template) | `C` · `Rust no_std` | GD32H759 高性能 MCU 引导加载程序（Bootloader）与 Cortex-M7 纯 Rust 静态库模板 |
 | **AI & LLM Infra** | [**`glm-proxy`**](https://github.com/AnlangA/glm-proxy) | `Rust` · `Axum 0.8` | 高并发 GLM API 透明转发代理网关，支持低延迟 SSE 流式透传与链路观测 |
 | **AI & LLM Infra** | [**`zai-rs`**](https://github.com/AnlangA/zai-rs) / [**`zhipuai-rs`**](https://github.com/AnlangA/zhipuai-rs) | `Rust` · `Tokio` | 类型安全、零样板代码的智谱 AI 纯 Rust 异步客户端 SDK，支持流式对话与函数调用 |
 | **AI & LLM Infra** | [**`deepseek-rs`**](https://github.com/AnlangA/deepseek-rs) / [**`openai-rs`**](https://github.com/AnlangA/openai-rs) | `Rust` · `Serde` | 面向 DeepSeek 与 OpenAI Responses API 的强类型无损协议建模 Rust SDK |
 | **AI & LLM Infra** | [**`blup`**](https://github.com/AnlangA/blup) / [**`skills-manager`**](https://github.com/AnlangA/skills-manager) | `Rust` · `Desktop UI` | AI 交互式学习 Agent 平台（沙箱编译）与本地 Agent Skills 命令行/桌面管理器 |
-| **Embedded & Edge** | [**`atk-dlrk3588-bsp`**](https://github.com/AnlangA/atk-dlrk3588-bsp) | `Rust` · `Linux v7.2` | 正点原子 RK3588 主线内核 / U-Boot 板级支持包，含板级 DTS 与纯 Rust UART/RS485 驱动 |
-| **Embedded & Edge** | [**`burn-mnist-rk3588`**](https://github.com/AnlangA/burn-mnist-rk3588) | `Rust` · `Burn` · `Vulkan` | 基于 Rust Burn 框架的模型训练与 RK3588 CPU / Vulkan GPU 端侧推理基准测试 |
-| **Embedded & Edge** | [**`qwen3-rk3588-colab`**](https://github.com/AnlangA/qwen3-rk3588-colab) | `Python` · `GGUF` | Qwen3-1.7B BF16 转 Q4_K_M GGUF 量化流水线与 RK3588 Vulkan 端侧部署验证 |
-| **Embedded & Edge** | [**`gd32h759boot`**](https://github.com/AnlangA/gd32h759boot) / [**`cortex-m7-rs`**](https://github.com/AnlangA/cortex-m7-rs-template) | `C` · `Rust no_std` | GD32H759 高性能 MCU 引导加载程序（Bootloader）与 Cortex-M7 纯 Rust 静态库模板 |
 | **Fieldbus & Power** | [**`ethercat-cli`**](https://github.com/AnlangA/ethercat-cli) | `Rust` · `EtherCAT` | 工业 EtherCAT 命令行与多 Crate 工作区：L2/UDP 报文剖析、ESI-to-SII 编译与 CoE/PDO 主站 |
 | **Fieldbus & Power** | [**`power_model_protocol`**](https://github.com/AnlangA/power_model_protocol) | `C` · `CAN / Serial` | 面向工业 AC-DC 充电桩电源模块（英飞源 / 优优绿能）的统一抽象协议驱动库 |
 | **Fieldbus & Power** | [**`ocpp_messages_gen_tool`**](https://github.com/AnlangA/ocpp_messages_gen_tool) | `Rust` · `OCPP / Modbus` | 充电机 OCPP 协议消息生成工具、Modbus 工具链与 ESP32-C3 TCP 协议测试终端 |
@@ -104,15 +111,15 @@ pub const ANLANGA: SystemsArchitect = SystemsArchitect {
         "Industrial Power & Charging (Modbus RTU/TCP, OCPP, EXI, AC-DC Power Modules)",
     ],
     ai_runtime:  &[
+        "RK3588 Heterogeneous Edge AI (Burn 0.22 + 3-Core RKNPU INT8/FP16 + Mesa PanVK)",
         "High-Concurrency LLM Gateways & Proxies (Rust + Axum 0.8 + Tokio SSE)",
         "Pure-Rust Type-Safe SDKs (Zhipu AI, DeepSeek, OpenAI Responses API)",
-        "Edge Inference on RK3588 (Burn Framework Vulkan GPU & Qwen3 GGUF Quantization)",
     ],
     native_gui:  &[
-        "Cross-Platform Embedded Serial & Waveform Workbenches (BBCom / Serial Bevy)",
+        "Direct LinuxKMS / DRM 60FPS Edge GUI (Slint) & Serial Workbenches (BBCom / Bevy)",
         "Immediate-Mode Native Engineering Tools (egui / eframe / XML-EXI / X.509)",
     ],
-    philosophy:  "Zero-cost abstractions from bare-metal silicon to cloud-native AI infrastructure.",
+    philosophy:  "Zero-cost abstractions from bare-metal silicon to heterogeneous NPU & cloud AI.",
 };
 ```
 

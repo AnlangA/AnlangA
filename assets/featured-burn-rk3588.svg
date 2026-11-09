@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 236" width="100%">
+  <defs>
+    <linearGradient id="spotBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E17"/>
+      <stop offset="55%" stop-color="#0F1523"/>
+      <stop offset="100%" stop-color="#0B101B"/>
+    </linearGradient>
+    <radialGradient id="spotGlow" cx="78%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#E06C3A" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="npuGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E06C3A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace; }
+      .pill { fill: #141B29; stroke: #263248; stroke-width: 1; }
+      .pill-hi { fill: #1D1616; stroke: #6B3825; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect x="1" y="1" width="878" height="234" rx="14" fill="url(#spotBg)" stroke="#263248" stroke-width="1.2"/>
+  <rect x="1" y="1" width="878" height="234" rx="14" fill="url(#spotGlow)"/>
+  <rect x="1" y="22" width="3.5" height="46" rx="1.75" fill="#E06C3A"/>
+
+  <!-- Left Column: Research & Architecture Details (x=28..485) -->
+  <g transform="translate(28, 22)">
+    <rect x="0" y="0" width="166" height="20" rx="5" fill="#1D1616" stroke="#6B3825" stroke-width="1"/>
+    <text x="83" y="13.5" class="mono" font-size="10" fill="#F0883E" text-anchor="middle" font-weight="600" letter-spacing="0.8">★ RESEARCH SPOTLIGHT</text>
+    <text x="178" y="14" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">RK3588 HETEROGENEOUS AI BENCHMARK</text>
+
+    <text x="0" y="46" class="sans" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="-0.3">burn-mnist-rk3588</text>
+    <text x="210" y="45" class="mono" font-size="11" fill="#10B981">● Rust 2024 · Burn 0.22.1 · RKNPU2</text>
+
+    <text x="0" y="72" class="sans" font-size="13" font-weight="600" fill="#E6EDF3">
+      面向瑞芯微 RK3588 (CPU / Mali-G610 / 3-Core NPU) 的跨计算单元可复现推理框架
+    </text>
+    <text x="0" y="93" class="sans" font-size="11.5" fill="#8B949E">
+      基于主线 Linux 7.2.5 (panthor + rknpu)，提出 W=32 零拷贝 DMA 对齐与 RKNB 三核并发流水线，
+    </text>
+    <text x="0" y="111" class="sans" font-size="11.5" fill="#8B949E">
+      内置 Slint LinuxKMS/DRM 60 FPS 板端交互识别系统、五后端硬件计数器评测与完整学术论文。
+    </text>
+
+    <!-- Bottom Tech Stack Pills -->
+    <g transform="translate(0, 128)">
+      <rect x="0" y="0" width="88" height="24" rx="5" class="pill-hi"/>
+      <text x="44" y="15.5" class="mono" font-size="10.5" fill="#F0883E" text-anchor="middle">Burn 0.22.1</text>
+
+      <rect x="96" y="0" width="94" height="24" rx="5" class="pill"/>
+      <text x="143" y="15.5" class="mono" font-size="10.5" fill="#34D399" text-anchor="middle">3-Core RKNPU</text>
+
+      <rect x="198" y="0" width="92" height="24" rx="5" class="pill"/>
+      <text x="244" y="15.5" class="mono" font-size="10.5" fill="#38BDF8" text-anchor="middle">Mesa PanVK</text>
+
+      <rect x="298" y="0" width="102" height="24" rx="5" class="pill"/>
+      <text x="349" y="15.5" class="mono" font-size="10.5" fill="#C9D1D9" text-anchor="middle">Slint DRM 60Hz</text>
+
+      <rect x="408" y="0" width="90" height="24" rx="5" class="pill"/>
+      <text x="453" y="15.5" class="mono" font-size="10.5" fill="#9CA3AF" text-anchor="middle">Linux 7.2.5</text>
+    </g>
+
+    <!-- Key Research Findings Strip -->
+    <text x="0" y="176" class="mono" font-size="10.5" fill="#8B949E">
+      <tspan fill="#10B981" font-weight="700">35,975 samples/s</tspan> (B=256 INT8)
+      <tspan fill="#484F58" dx="5">·</tspan>
+      <tspan fill="#F0883E" font-weight="700" dx="5">88.5 µs</tspan> Pure NPU
+      <tspan fill="#484F58" dx="5">·</tspan>
+      <tspan fill="#38BDF8" font-weight="700" dx="5">98.66%</tspan> Accuracy
+    </text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="544" y1="22" x2="544" y2="214" stroke="#1E2738" stroke-width="1"/>
+
+  <!-- Right Column: 5-Backend Quantitative Latency Benchmark (B=1) -->
+  <g transform="translate(564, 22)">
+    <text x="0" y="14" class="mono" font-size="10.5" fill="#C9D1D9" font-weight="600">5-BACKEND LATENCY (B=1)</text>
+    <text x="292" y="14" class="mono" font-size="10" fill="#10B981" text-anchor="end">LOWER IS FASTER</text>
+    <line x1="0" y1="24" x2="292" y2="24" stroke="#1E2738" stroke-width="1"/>
+
+    <!-- Bar 1: RKNPU INT8 -->
+    <g transform="translate(0, 38)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#F0F6FC" font-weight="700">RKNPU INT8 (Zero-Copy)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#34D399" font-weight="700" text-anchor="end">0.163 ms (35.8x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="26" height="6" rx="3" fill="url(#npuGrad)"/>
+    </g>
+
+    <!-- Bar 2: RKNPU FP16 -->
+    <g transform="translate(0, 74)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#E6EDF3">RKNPU FP16 (3-Core)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#10B981" font-weight="600" text-anchor="end">0.184 ms (31.7x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="32" height="6" rx="3" fill="#10B981"/>
+    </g>
+
+    <!-- Bar 3: CPU NEON + L3 -->
+    <g transform="translate(0, 110)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#E6EDF3">CPU NEON (3MB L3 Cache)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#F0883E" font-weight="600" text-anchor="end">0.982 ms (5.95x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="84" height="6" rx="3" fill="url(#amberGrad)"/>
+    </g>
+
+    <!-- Bar 4: Mali-G610 Vulkan -->
+    <g transform="translate(0, 146)">
+      <text x="0" y="10" class="mono" font-size="10.5" fill="#9CA3AF">Mali-G610 Vulkan (PanVK)</text>
+      <text x="292" y="10" class="mono" font-size="10.5" fill="#38BDF8" text-anchor="end">3.116 ms (1.87x)</text>
+      <rect x="0" y="15" width="292" height="6" rx="3" fill="#151C2A"/>
+      <rect x="0" y="15" width="172" height="6" rx="3" fill="#0284C7"/>
+    </g>
+
+    <!-- Bar 5: Mali-G610 GLES -->
+    <g transform="translate(0, 178)">
+      <text x="0" y="10" class="mono" font-size="10" fill="#6E7681">Mali-G610 GLES (Panfrost) · 5.840 ms (1.0x Baseline)</text>
+    </g>
+  </g>
+</svg>

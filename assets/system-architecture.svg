@@ -22,7 +22,7 @@
   <!-- Outer Container -->
   <rect x="1" y="1" width="878" height="358" rx="14" fill="url(#cardBg)" stroke="#1E2534" stroke-width="1.2"/>
 
-  <!-- Section Header (Using single text + tspan so zero overlap is guaranteed) -->
+  <!-- Section Header -->
   <text x="28" y="33" class="mono" font-size="11" fill="#E06C3A" font-weight="600">
     01 // ARCHITECTURE MATRIX
     <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">四维工程技术体系 · Full-Stack Systems Engineering</tspan>
@@ -61,24 +61,24 @@
     <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
     <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#38BDF8"/>
 
-    <text x="18" y="25" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">02 · AI INFRA &amp; EDGE INFERENCE</text>
-    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">SDK / 网关 / 端侧部署</text>
-    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">大模型基础设施与端侧异构推理</text>
-    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">纯 Rust 类型安全 LLM SDK 矩阵、高并发代理网关与 Vulkan 量化推理</text>
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">02 · EDGE HETEROGENEOUS AI &amp; LLM</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">NPU / GPU / 异步网关</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">端侧异构推理与大模型基础设施</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">Rust Burn 跨计算单元 (CPU/PanVK/RKNPU) 推理、LLM SDK 与网关</text>
 
     <!-- Tech Pills -->
     <g transform="translate(18, 86)">
-      <rect x="0" y="0" width="88" height="24" rx="5" class="pill-cyan"/>
-      <text x="44" y="15.5" class="mono" font-size="11" fill="#38BDF8" text-anchor="middle">Axum 0.8</text>
+      <rect x="0" y="0" width="92" height="24" rx="5" class="pill-cyan"/>
+      <text x="46" y="15.5" class="mono" font-size="11" fill="#38BDF8" text-anchor="middle">Burn 0.22</text>
 
-      <rect x="96" y="0" width="104" height="24" rx="5" class="pill"/>
-      <text x="148" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Zhipu/OpenAI</text>
+      <rect x="100" y="0" width="90" height="24" rx="5" class="pill"/>
+      <text x="145" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">RKNPU INT8</text>
 
-      <rect x="208" y="0" width="84" height="24" rx="5" class="pill"/>
-      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Burn GPU</text>
+      <rect x="198" y="0" width="84" height="24" rx="5" class="pill"/>
+      <text x="240" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Axum 0.8</text>
 
-      <rect x="300" y="0" width="88" height="24" rx="5" class="pill"/>
-      <text x="344" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">Qwen3 GGUF</text>
+      <rect x="290" y="0" width="98" height="24" rx="5" class="pill"/>
+      <text x="339" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">Zhipu/OpenAI</text>
     </g>
   </g>
 
@@ -114,9 +114,9 @@
     <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#F59E0B"/>
 
     <text x="18" y="25" class="mono" font-size="10.5" fill="#F59E0B" font-weight="600">04 · NATIVE GUI WORKBENCHES</text>
-    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">高帧率渲染 / 研发工具</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">DRM 直驱 / 研发工具</text>
     <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">高性能原生桌面与工程调试软件</text>
-    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">基于 egui 与 Bevy 引擎打造低延迟串口波形仪、XML/EXI 及证书工作台</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">基于 Slint KMS、egui 与 Bevy 打造低延迟串口波形仪及工程工作台</text>
 
     <!-- Tech Pills -->
     <g transform="translate(18, 86)">
@@ -127,7 +127,7 @@
       <text x="150" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Bevy Engine</text>
 
       <rect x="204" y="0" width="92" height="24" rx="5" class="pill"/>
-      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Serial/Plot</text>
+      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Slint KMS</text>
 
       <rect x="304" y="0" width="84" height="24" rx="5" class="pill"/>
       <text x="346" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">X.509/EXI</text>
