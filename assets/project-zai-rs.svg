@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 162" width="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E16"/>
+      <stop offset="100%" stop-color="#101521"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Card Frame -->
+  <rect x="1" y="1" width="430" height="160" rx="12" fill="url(#pBg)" stroke="#1F2737" stroke-width="1.2"/>
+  <rect x="1" y="20" width="3" height="32" rx="1.5" fill="#38BDF8"/>
+
+  <!-- Top Category & Star Row -->
+  <text x="22" y="28" class="mono" font-size="10" fill="#38BDF8" letter-spacing="1.2" font-weight="600">06 // PURE-RUST LLM SDK</text>
+
+  <g transform="translate(352, 14)">
+    <rect x="0" y="0" width="58" height="20" rx="10" fill="#151B28" stroke="#263147" stroke-width="1"/>
+    <text x="29" y="13.5" class="mono" font-size="10.5" fill="#FBBF24" text-anchor="middle" font-weight="600">★ 3</text>
+  </g>
+
+  <!-- Repo Title -->
+  <text x="22" y="54" class="sans" font-size="17" font-weight="800" fill="#F0F6FC" letter-spacing="-0.2">zhipuai-rs / zai-rs</text>
+
+  <!-- Description Lines -->
+  <text x="22" y="79" class="sans" font-size="12.5" fill="#C9D1D9">类型安全、零样板代码的智谱 AI 与大模型生态纯 Rust 客户端库</text>
+  <text x="22" y="99" class="sans" font-size="11.5" fill="#8B949E">提供完备的异步流式对话、工具调用、强类型建模与一致错误处理</text>
+
+  <line x1="22" y1="112" x2="410" y2="112" stroke="#1A2130" stroke-width="1"/>
+
+  <!-- Tech Tags -->
+  <rect x="22.0" y="122" width="77.2" height="22" rx="5" fill="#141A26" stroke="#242E42" stroke-width="1"/><text x="60.6" y="136.5" class="mono" font-size="10.5" fill="#9CA3AF" text-anchor="middle">Async SDK</text>
+  <rect x="107.2" y="122" width="77.2" height="22" rx="5" fill="#141A26" stroke="#242E42" stroke-width="1"/><text x="145.8" y="136.5" class="mono" font-size="10.5" fill="#9CA3AF" text-anchor="middle">Type-Safe</text>
+  <rect x="192.4" y="122" width="84.0" height="22" rx="5" fill="#141A26" stroke="#242E42" stroke-width="1"/><text x="234.4" y="136.5" class="mono" font-size="10.5" fill="#9CA3AF" text-anchor="middle">SSE Stream</text>
+
+  <!-- Right-Aligned Language Indicator (never clips!) -->
+  <text x="410" y="137" class="mono" font-size="11" fill="#8B949E" text-anchor="end">
+    <tspan fill="#E06C3A">●</tspan> Rust
+  </text>
+</svg>

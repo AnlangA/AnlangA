@@ -1,193 +1,125 @@
 <div align="center">
 
-<!-- ─── Header Banner ─── -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=AnlangA&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Rust%20%7C%20Embedded%20%7C%20AI%20%7C%20GUI&descAlignY=62&descAlign=50" width="100%"/>
-
-<!-- ─── Typing SVG ─── -->
+<!-- ─── 00 // EXECUTIVE HERO BANNER ─── -->
 <a href="https://github.com/AnlangA">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B+I'm+stone+Mason;Rust+%E7%88%B1%E5%A5%BD%E8%80%85+%7C+Rustacean+%F0%9F%A6%80;Embedded+Systems+Developer+%F0%9F%94%A7;AI+%26+LLM+Integration+%F0%9F%A4%96;GUI+App+Builder+%F0%9F%96%A5%EF%B8%8F" alt="Typing SVG"/>
+  <img src="./assets/hero-banner.svg" width="100%" alt="Stone Mason (AnlangA) — Systems & Embedded Rust Architect"/>
 </a>
 
 <br/>
 
-<!-- ─── Social Badges ─── -->
-<a href="https://github.com/AnlangA?tab=followers">
-  <img src="https://img.shields.io/github/followers/AnlangA?style=for-the-badge&color=0e75b6&logo=github&label=Followers" alt="Followers"/>
-</a>
-<img src="https://komarev.com/ghpvc/?username=AnlangA&style=for-the-badge&color=0e75b6&label=Profile+Views" alt="Profile Views"/>
-<a href="https://github.com/AnlangA?tab=repositories">
-  <img src="https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/AnlangA&query=$.public_repos&label=Repositories&style=for-the-badge&color=0e75b6&logo=github" alt="Repositories"/>
-</a>
+<!-- ─── 01 // FOUR-PILLAR ARCHITECTURE MATRIX ─── -->
+<img src="./assets/system-architecture.svg" width="100%" alt="01 // Architecture Matrix — Embedded BSP, AI Infra, Industrial Fieldbus, Native GUI"/>
+
+<br/>
+
+<!-- ─── 02 // CODEBASE TELEMETRY & LANGUAGE SPECTRUM ─── -->
+<img src="./assets/telemetry-stats.svg" width="100%" alt="02 // Codebase Telemetry & Language Spectrum"/>
+
+<br/>
+
+<!-- ─── 03 // FLAGSHIP ENGINEERING WORKS ─── -->
+<img src="./assets/section-projects.svg" width="100%" alt="03 // Flagship Engineering Works"/>
+
+<p align="center">
+  <a href="https://github.com/AnlangA/bbcom">
+    <img src="./assets/project-bbcom.svg" width="49%" alt="bbcom — Cross-Platform Serial & Protocol Workbench"/>
+  </a>
+  <a href="https://github.com/AnlangA/ethercat-cli">
+    <img src="./assets/project-ethercat-cli.svg" width="49%" alt="ethercat-cli — Pure-Rust Industrial EtherCAT CLI & Master"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AnlangA/glm-proxy">
+    <img src="./assets/project-glm-proxy.svg" width="49%" alt="glm-proxy — High-Concurrency GLM API Transparent Gateway"/>
+  </a>
+  <a href="https://github.com/AnlangA/atk-dlrk3588-bsp">
+    <img src="./assets/project-rk3588-bsp.svg" width="49%" alt="atk-dlrk3588-bsp — Mainline Linux v7.2.5 RK3588 BSP & Rust Drivers"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AnlangA/serial_bevy">
+    <img src="./assets/project-serial-bevy.svg" width="49%" alt="serial_bevy — High-Frame-Rate Serial Workbench Powered by Bevy"/>
+  </a>
+  <a href="https://github.com/AnlangA/zhipuai-rs">
+    <img src="./assets/project-zai-rs.svg" width="49%" alt="zhipuai-rs & zai-rs — Pure-Rust LLM Client SDKs"/>
+  </a>
+</p>
 
 </div>
 
 ---
 
-## 🧑‍💻 关于我 · About Me
+### `04 // OPEN-SOURCE REPOSITORY MATRIX · 开源工程索引`
+
+| 领域 · Domain | 核心项目 · Repository | 技术栈 · Stack | 工程定位与架构特性 · Engineering Specification |
+| :--- | :--- | :--- | :--- |
+| **AI & LLM Infra** | [**`glm-proxy`**](https://github.com/AnlangA/glm-proxy) | `Rust` · `Axum 0.8` | 高并发 GLM API 透明转发代理网关，支持低延迟 SSE 流式透传与链路观测 |
+| **AI & LLM Infra** | [**`zai-rs`**](https://github.com/AnlangA/zai-rs) / [**`zhipuai-rs`**](https://github.com/AnlangA/zhipuai-rs) | `Rust` · `Tokio` | 类型安全、零样板代码的智谱 AI 纯 Rust 异步客户端 SDK，支持流式对话与函数调用 |
+| **AI & LLM Infra** | [**`deepseek-rs`**](https://github.com/AnlangA/deepseek-rs) / [**`openai-rs`**](https://github.com/AnlangA/openai-rs) | `Rust` · `Serde` | 面向 DeepSeek 与 OpenAI Responses API 的强类型无损协议建模 Rust SDK |
+| **AI & LLM Infra** | [**`blup`**](https://github.com/AnlangA/blup) / [**`skills-manager`**](https://github.com/AnlangA/skills-manager) | `Rust` · `Desktop UI` | AI 交互式学习 Agent 平台（沙箱编译）与本地 Agent Skills 命令行/桌面管理器 |
+| **Embedded & Edge** | [**`atk-dlrk3588-bsp`**](https://github.com/AnlangA/atk-dlrk3588-bsp) | `Rust` · `Linux v7.2` | 正点原子 RK3588 主线内核 / U-Boot 板级支持包，含板级 DTS 与纯 Rust UART/RS485 驱动 |
+| **Embedded & Edge** | [**`burn-mnist-rk3588`**](https://github.com/AnlangA/burn-mnist-rk3588) | `Rust` · `Burn` · `Vulkan` | 基于 Rust Burn 框架的模型训练与 RK3588 CPU / Vulkan GPU 端侧推理基准测试 |
+| **Embedded & Edge** | [**`qwen3-rk3588-colab`**](https://github.com/AnlangA/qwen3-rk3588-colab) | `Python` · `GGUF` | Qwen3-1.7B BF16 转 Q4_K_M GGUF 量化流水线与 RK3588 Vulkan 端侧部署验证 |
+| **Embedded & Edge** | [**`gd32h759boot`**](https://github.com/AnlangA/gd32h759boot) / [**`cortex-m7-rs`**](https://github.com/AnlangA/cortex-m7-rs-template) | `C` · `Rust no_std` | GD32H759 高性能 MCU 引导加载程序（Bootloader）与 Cortex-M7 纯 Rust 静态库模板 |
+| **Fieldbus & Power** | [**`ethercat-cli`**](https://github.com/AnlangA/ethercat-cli) | `Rust` · `EtherCAT` | 工业 EtherCAT 命令行与多 Crate 工作区：L2/UDP 报文剖析、ESI-to-SII 编译与 CoE/PDO 主站 |
+| **Fieldbus & Power** | [**`power_model_protocol`**](https://github.com/AnlangA/power_model_protocol) | `C` · `CAN / Serial` | 面向工业 AC-DC 充电桩电源模块（英飞源 / 优优绿能）的统一抽象协议驱动库 |
+| **Fieldbus & Power** | [**`ocpp_messages_gen_tool`**](https://github.com/AnlangA/ocpp_messages_gen_tool) | `Rust` · `OCPP / Modbus` | 充电机 OCPP 协议消息生成工具、Modbus 工具链与 ESP32-C3 TCP 协议测试终端 |
+| **Native GUI Tools** | [**`bbcom`**](https://github.com/AnlangA/bbcom) | `TypeScript` · `GUI` | 跨平台嵌入式串口调试工作台：多会话 TX/RX、Modbus 主站、实时波形绘图与 AI 终端辅助 |
+| **Native GUI Tools** | [**`serial_bevy`**](https://github.com/AnlangA/serial_bevy) | `Rust` · `Bevy ECS` | 基于 Bevy 引擎构建的高帧率原生串口通信与数据可视化桌面工具 |
+| **Native GUI Tools** | [**`xml_tool`**](https://github.com/AnlangA/xml_tool) / [**`cer-viewer`**](https://github.com/AnlangA/cer-viewer) | `Rust` · `egui / eframe` | 专业级 XML/EXI 桌面工作台（XPath/XSD/Diff）与现代化 X.509 证书 / CSR 解析查看器 |
+| **Native GUI Tools** | [**`egui-sgr`**](https://github.com/AnlangA/egui-sgr) / [**`number-conversion-rs`**](https://github.com/AnlangA/number-conversion-rs) | `Rust` · `egui` | ANSI SGR 终端色彩转 `egui::RichText` 解析库，以及 IEEE-754 `f32` / 进制精密转换器 |
+
+<details>
+<summary><b><code>05 // ARCHITECTURAL SPECIFICATION (RUST) · 点击展开系统架构师定义</code></b></summary>
+
+<br/>
 
 ```rust
-struct Developer {
-    name:     &'static str,
-    location: &'static str,
-    langs:    &'static [&'static str],
-    focus:    &'static [&'static str],
-    motto:    &'static str,
+#![no_std]
+
+pub struct SystemsArchitect {
+    pub handle:       &'static str,
+    pub alias:        &'static str,
+    pub core_langs:   &'static [&'static str],
+    pub silicon_bsp:  &'static [&'static str],
+    pub protocols:    &'static [&'static str],
+    pub ai_runtime:   &'static [&'static str],
+    pub native_gui:   &'static [&'static str],
+    pub philosophy:   &'static str,
 }
 
-const ME: Developer = Developer {
-    name:     "stone Mason (AnlangA)",
-    location: "China 🇨🇳",
-    langs:    &["Rust 🦀", "C", "C++"],
-    focus:    &[
-        "AI / LLM SDK & Proxy 🤖",
-        "Embedded Systems (ESP32, GD32) 🔧",
-        "GUI Applications (egui / Bevy) 🎮",
-        "Network Tools & Protocols 🌐",
+pub const ANLANGA: SystemsArchitect = SystemsArchitect {
+    handle:      "AnlangA",
+    alias:       "Stone Mason",
+    core_langs:  &["Rust (2021 / 2024)", "C (ISO C11)", "C++ (Modern)"],
+    silicon_bsp: &[
+        "Rockchip RK3588 (Mainline Linux v7.2.5 / U-Boot / Rust Chardev & UART/RS485)",
+        "GigaDevice GD32H759 (Cortex-M7 Bootloader & Bare-Metal Firmware)",
+        "Espressif ESP32-S3 / ESP32-C3 & STM32 ART-Pi 2 (Zephyr RTOS / no_std)",
     ],
-    motto:    "Write fast, safe, and expressive code in Rust.",
+    protocols:   &[
+        "EtherCAT (L2/UDP Dissector, ESI-to-SII EEPROM Compiler, CoE/PDO Master)",
+        "Industrial Power & Charging (Modbus RTU/TCP, OCPP, EXI, AC-DC Power Modules)",
+    ],
+    ai_runtime:  &[
+        "High-Concurrency LLM Gateways & Proxies (Rust + Axum 0.8 + Tokio SSE)",
+        "Pure-Rust Type-Safe SDKs (Zhipu AI, DeepSeek, OpenAI Responses API)",
+        "Edge Inference on RK3588 (Burn Framework Vulkan GPU & Qwen3 GGUF Quantization)",
+    ],
+    native_gui:  &[
+        "Cross-Platform Embedded Serial & Waveform Workbenches (BBCom / Serial Bevy)",
+        "Immediate-Mode Native Engineering Tools (egui / eframe / XML-EXI / X.509)",
+    ],
+    philosophy:  "Zero-cost abstractions from bare-metal silicon to cloud-native AI infrastructure.",
 };
 ```
 
----
-
-## 🛠️ 技术栈 · Tech Stack
-
-<div align="center">
-
-### 语言 · Languages
-
-<img src="https://skillicons.dev/icons?i=rust,c,cpp&theme=dark" height="50" alt="Languages"/>
+</details>
 
 <br/>
 
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-### 框架 & 工具 · Frameworks & Tools
-
-<img src="https://skillicons.dev/icons?i=linux,vscode,git,github,cmake&theme=dark" height="50" alt="Tools"/>
-
-<br/>
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![VSCode](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
-![Tokio](https://img.shields.io/badge/Tokio-000000?style=flat-square&logo=rust&logoColor=white)
-![egui](https://img.shields.io/badge/egui-5A4FCF?style=flat-square&logo=rust&logoColor=white)
-
-### 领域 · Domains
-
-| 🤖 AI / LLM | 🔧 Embedded | 🎮 GUI | 🌐 Network |
-|:-----------:|:-----------:|:------:|:---------:|
-| `axum` · `tokio` | `ESP32-S3` · `GD32H7` | `egui` · `bevy` | `modbus` · `TCP` |
-| `zhipuai-rs` · `deepseek-rs` | `no_std` · `RTOS` | `egui-sgr` · `bevy_rapier` | `tcptool` · `OCPP` |
-
-</div>
-
----
-
-## 📊 编程语言占比 · Language Distribution
-
 <div align="center">
-
-> Statistics across public repositories
-
-<!-- Top Languages card — using compact layout for reliable language icon display -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnlangA&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&size_weight=0.5&count_weight=0.5&card_width=445" height="200" alt="Top Languages"/>
-
-<!-- Manual breakdown bar for clarity -->
-
-| Language | Repos | Proportion |
-|----------|:-----:|:----------:|
-| 🦀 **Rust** | ~32 | ████████████████░░░░ **80 %** |
-| 🔵 **C** | ~5 | ███░░░░░░░░░░░░░░░░░ **12 %** |
-| 🔷 **C++** | 1 | █░░░░░░░░░░░░░░░░░░░ **3 %** |
-| 📄 **Typst** | 1 | ▒░░░░░░░░░░░░░░░░░░░ **2 %** |
-| ⚙️ **Other** | ~4 | ▒░░░░░░░░░░░░░░░░░░░ **3 %** |
-
-</div>
-
----
-
-## 📈 GitHub 统计 · GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=AnlangA&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github&include_all_commits=true" height="185" alt="GitHub Stats"/>
-<img src="https://github-readme-streak-stats.herokuapp.com?user=AnlangA&theme=tokyonight&hide_border=true&date_format=Y.n.j" height="185" alt="GitHub Streak"/>
-
-</div>
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=AnlangA&theme=tokyo-night&hide_border=true&area=true&area_color=58A6FF" width="95%" alt="Activity Graph"/>
-</div>
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=AnlangA&theme=tokyonight&no-frame=true&column=7&margin-w=10)](https://github.com/AnlangA)
-
-</div>
-
----
-
-## 🌟 精选项目 · Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/AnlangA/glm-proxy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=glm-proxy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-<a href="https://github.com/AnlangA/zhipuai-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=zhipuai-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-
-<a href="https://github.com/AnlangA/deepseek-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=deepseek-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-<a href="https://github.com/AnlangA/serial_bevy">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=serial_bevy&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-
-<a href="https://github.com/AnlangA/egui-sgr">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=egui-sgr&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-<a href="https://github.com/AnlangA/number-conversion-rs">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=AnlangA&repo=number-conversion-rs&theme=tokyonight&hide_border=true&show_owner=false" height="140"/>
-</a>
-
-</div>
-
----
-
-## 🎯 当前关注 · Current Focus
-
-<div align="center">
-
-```
-🤖  大模型 API SDK 开发（Rust 生态）
-     Building LLM API SDKs in pure Rust
-
-🔧  嵌入式 Rust（ESP32-S3 / GD32H7）
-     Embedded Rust on resource-constrained MCUs
-
-🎮  基于 egui / Bevy 的桌面 GUI 工具
-     Desktop GUI tooling with egui & Bevy
-
-🌐  工业协议工具（Modbus / OCPP / TCP）
-     Industrial protocol tools (Modbus, OCPP, TCP)
-```
-
-</div>
-
----
-
-<div align="center">
-
-<!-- ─── Footer Banner ─── -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
-*"Memory safety without garbage collection, concurrency without data races."* — The Rust Manifesto 🦀
-
+  <img src="./assets/footer-banner.svg" width="100%" alt="Footer — Memory safety without garbage collection, concurrency without data races."/>
 </div>

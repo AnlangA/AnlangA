@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 268" width="100%">
+  <defs>
+    <linearGradient id="tBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C12"/>
+      <stop offset="100%" stop-color="#0E121B"/>
+    </linearGradient>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121723"/>
+      <stop offset="100%" stop-color="#0C1018"/>
+    </linearGradient>
+    <linearGradient id="rustBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E06C3A"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="cBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="tsBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="878" height="266" rx="14" fill="url(#tBg)" stroke="#1E2534" stroke-width="1.2"/>
+
+  <!-- Header (Single text + tspan so zero overlap is guaranteed) -->
+  <text x="28" y="33" class="mono" font-size="11" fill="#38BDF8" font-weight="600">
+    02 // CODEBASE TELEMETRY &amp; LANGUAGE SPECTRUM
+    <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">研发遥测与代码生态占比</tspan>
+  </text>
+  <text x="852" y="33" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">58 ORIGINAL / 128 PUBLIC REPOS</text>
+  <line x1="28" y1="48" x2="852" y2="48" stroke="#1B2230" stroke-width="1"/>
+
+  <!-- Left Panel: Key Engineering Metrics -->
+  <g transform="translate(24, 62)">
+    <rect x="0" y="0" width="380" height="184" rx="10" fill="url(#panelBg)" stroke="#1F2737" stroke-width="1"/>
+
+    <text x="20" y="25" class="mono" font-size="10.5" fill="#8B949E">GITHUB TELEMETRY · 关键仓库指标</text>
+    <text x="360" y="25" class="mono" font-size="10" fill="#10B981" text-anchor="end">● VERIFIED</text>
+    <line x1="20" y1="36" x2="360" y2="36" stroke="#1B2230" stroke-width="1"/>
+
+    <!-- Row 1 -->
+    <g transform="translate(20, 50)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">PUBLIC REPOS</text>
+      <text x="0" y="38" class="mono" font-size="25" font-weight="700" fill="#F0F6FC">128</text>
+    </g>
+    <g transform="translate(142, 50)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">ORIGINAL CRATES</text>
+      <text x="0" y="38" class="mono" font-size="25" font-weight="700" fill="#E06C3A">58</text>
+    </g>
+    <g transform="translate(264, 50)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">RUST RATIO</text>
+      <text x="0" y="38" class="mono" font-size="25" font-weight="700" fill="#38BDF8">69.0%</text>
+    </g>
+
+    <line x1="20" y1="104" x2="360" y2="104" stroke="#19202D" stroke-width="1" stroke-dasharray="3 3"/>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 118)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">RUST EDITION</text>
+      <text x="0" y="34" class="sans" font-size="14.5" font-weight="700" fill="#C9D1D9">2021 / 2024</text>
+    </g>
+    <g transform="translate(142, 118)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">KERNEL TARGET</text>
+      <text x="0" y="34" class="sans" font-size="14.5" font-weight="700" fill="#C9D1D9">Linux v7.2 BSP</text>
+    </g>
+    <g transform="translate(264, 118)">
+      <text x="0" y="12" class="mono" font-size="10" fill="#6E7681">COMMUNITY</text>
+      <text x="0" y="34" class="mono" font-size="14.5" font-weight="700" fill="#10B981">★ 23 · 19 Flw</text>
+    </g>
+  </g>
+
+  <!-- Right Panel: Precision Language Breakdown -->
+  <g transform="translate(420, 62)">
+    <rect x="0" y="0" width="436" height="184" rx="10" fill="url(#panelBg)" stroke="#1F2737" stroke-width="1"/>
+
+    <text x="20" y="25" class="mono" font-size="10.5" fill="#8B949E">LANGUAGE SPECTRUM · 原创项目语言分布</text>
+    <text x="416" y="25" class="mono" font-size="10" fill="#E06C3A" text-anchor="end">SYSTEMS-FIRST</text>
+
+    <!-- Stacked Multi-Segment Master Bar (width = 396) -->
+    <g transform="translate(20, 36)">
+      <rect x="0" y="0" width="396" height="10" rx="5" fill="#181F2C"/>
+      <rect x="0" y="0" width="273" height="10" rx="4" fill="url(#rustBar)"/>
+      <rect x="275" y="0" width="55" height="10" fill="url(#cBar)"/>
+      <rect x="332" y="0" width="21" height="10" fill="#F59E0B"/>
+      <rect x="355" y="0" width="41" height="10" rx="4" fill="url(#tsBar)"/>
+    </g>
+
+    <!-- Row 1: Rust -->
+    <g transform="translate(20, 66)">
+      <circle cx="6" cy="-4" r="4.5" fill="#E06C3A"/>
+      <text x="18" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Rust</text>
+      <text x="60" y="0" class="mono" font-size="11" fill="#8B949E">40 repos · SDKs / BSP / EtherCAT / GUI</text>
+      <text x="396" y="0" class="mono" font-size="12" font-weight="700" fill="#F0883E" text-anchor="end">69.0%</text>
+      <rect x="0" y="7" width="396" height="4" rx="2" fill="#171D29"/>
+      <rect x="0" y="7" width="273" height="4" rx="2" fill="url(#rustBar)"/>
+    </g>
+
+    <!-- Row 2: C / C++ -->
+    <g transform="translate(20, 99)">
+      <circle cx="6" cy="-4" r="4.5" fill="#38BDF8"/>
+      <text x="18" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">C / C++</text>
+      <text x="78" y="0" class="mono" font-size="11" fill="#8B949E">8 repos · GD32 Bootloader / Power Drivers</text>
+      <text x="396" y="0" class="mono" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="end">13.8%</text>
+      <rect x="0" y="7" width="396" height="4" rx="2" fill="#171D29"/>
+      <rect x="0" y="7" width="55" height="4" rx="2" fill="url(#cBar)"/>
+    </g>
+
+    <!-- Row 3: Python -->
+    <g transform="translate(20, 132)">
+      <circle cx="6" cy="-4" r="4.5" fill="#F59E0B"/>
+      <text x="18" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">Python</text>
+      <text x="74" y="0" class="mono" font-size="11" fill="#8B949E">3 repos · Qwen3 GGUF Quant / ART-Pi Zephyr</text>
+      <text x="396" y="0" class="mono" font-size="12" font-weight="700" fill="#FBBF24" text-anchor="end">5.2%</text>
+      <rect x="0" y="7" width="396" height="4" rx="2" fill="#171D29"/>
+      <rect x="0" y="7" width="24" height="4" rx="2" fill="#F59E0B"/>
+    </g>
+
+    <!-- Row 4: TypeScript / Typst / Just -->
+    <g transform="translate(20, 165)">
+      <circle cx="6" cy="-4" r="4.5" fill="#10B981"/>
+      <text x="18" y="0" class="sans" font-size="13" font-weight="700" fill="#F0F6FC">TypeScript · Typst · Just</text>
+      <text x="186" y="0" class="mono" font-size="11" fill="#8B949E">7 repos · BBCom / Specs</text>
+      <text x="396" y="0" class="mono" font-size="12" font-weight="700" fill="#34D399" text-anchor="end">12.0%</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090C12"/>
+      <stop offset="100%" stop-color="#0E121B"/>
+    </linearGradient>
+    <linearGradient id="quadBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#121723"/>
+      <stop offset="100%" stop-color="#0C1018"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Cascadia Code', Consolas, monospace; }
+      .pill { fill: #151B27; stroke: #252F42; stroke-width: 1; }
+      .pill-amber { fill: #1D1514; stroke: #5E3322; stroke-width: 1; }
+      .pill-cyan { fill: #101B26; stroke: #1D4463; stroke-width: 1; }
+      .pill-emerald { fill: #0F1E1B; stroke: #1A4D40; stroke-width: 1; }
+      .pill-gold { fill: #1D1912; stroke: #59431B; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Outer Container -->
+  <rect x="1" y="1" width="878" height="358" rx="14" fill="url(#cardBg)" stroke="#1E2534" stroke-width="1.2"/>
+
+  <!-- Section Header (Using single text + tspan so zero overlap is guaranteed) -->
+  <text x="28" y="33" class="mono" font-size="11" fill="#E06C3A" font-weight="600">
+    01 // ARCHITECTURE MATRIX
+    <tspan class="sans" font-size="12.5" fill="#8B949E" font-weight="400" dx="14">四维工程技术体系 · Full-Stack Systems Engineering</tspan>
+  </text>
+  <text x="852" y="33" class="mono" font-size="10.5" fill="#6E7681" text-anchor="end">SPEC.REV.2026</text>
+  <line x1="28" y1="48" x2="852" y2="48" stroke="#1B2230" stroke-width="1"/>
+
+  <!-- ==================== QUADRANT 1: EMBEDDED & LINUX BSP ==================== -->
+  <g transform="translate(24, 62)">
+    <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
+    <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#E06C3A"/>
+
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#E06C3A" font-weight="600">01 · EMBEDDED &amp; KERNEL BSP</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">裸机 / RTOS / 主线内核</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">嵌入式系统与 Linux 板级支持包</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">从 Cortex-M7 / RISC-V 微控制器到 RK3588 主线内核 Rust 驱动开发</text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(18, 86)">
+      <rect x="0" y="0" width="94" height="24" rx="5" class="pill-amber"/>
+      <text x="47" y="15.5" class="mono" font-size="11" fill="#F0883E" text-anchor="middle">RK3588 BSP</text>
+
+      <rect x="102" y="0" width="76" height="24" rx="5" class="pill"/>
+      <text x="140" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">GD32H7</text>
+
+      <rect x="186" y="0" width="80" height="24" rx="5" class="pill"/>
+      <text x="226" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">ESP32-S3</text>
+
+      <rect x="274" y="0" width="114" height="24" rx="5" class="pill"/>
+      <text x="331" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">no_std / Zephyr</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 2: AI INFRA & EDGE INFERENCE ==================== -->
+  <g transform="translate(448, 62)">
+    <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
+    <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#38BDF8"/>
+
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#38BDF8" font-weight="600">02 · AI INFRA &amp; EDGE INFERENCE</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">SDK / 网关 / 端侧部署</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">大模型基础设施与端侧异构推理</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">纯 Rust 类型安全 LLM SDK 矩阵、高并发代理网关与 Vulkan 量化推理</text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(18, 86)">
+      <rect x="0" y="0" width="88" height="24" rx="5" class="pill-cyan"/>
+      <text x="44" y="15.5" class="mono" font-size="11" fill="#38BDF8" text-anchor="middle">Axum 0.8</text>
+
+      <rect x="96" y="0" width="104" height="24" rx="5" class="pill"/>
+      <text x="148" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Zhipu/OpenAI</text>
+
+      <rect x="208" y="0" width="84" height="24" rx="5" class="pill"/>
+      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Burn GPU</text>
+
+      <rect x="300" y="0" width="88" height="24" rx="5" class="pill"/>
+      <text x="344" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">Qwen3 GGUF</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 3: INDUSTRIAL PROTOCOLS ==================== -->
+  <g transform="translate(24, 206)">
+    <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
+    <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#10B981"/>
+
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#10B981" font-weight="600">03 · INDUSTRIAL FIELDBUS &amp; POWER</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">实时以太网 / 能源协议</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">工业总线协议栈与电力电子通信</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">EtherCAT 报文剖析与主站控制、ESI/SII 编译、Modbus 及充电机协议</text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(18, 86)">
+      <rect x="0" y="0" width="92" height="24" rx="5" class="pill-emerald"/>
+      <text x="46" y="15.5" class="mono" font-size="11" fill="#34D399" text-anchor="middle">EtherCAT</text>
+
+      <rect x="100" y="0" width="86" height="24" rx="5" class="pill"/>
+      <text x="143" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">CoE / PDO</text>
+
+      <rect x="194" y="0" width="92" height="24" rx="5" class="pill"/>
+      <text x="240" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Modbus TCP</text>
+
+      <rect x="294" y="0" width="94" height="24" rx="5" class="pill"/>
+      <text x="341" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">OCPP / EXI</text>
+    </g>
+  </g>
+
+  <!-- ==================== QUADRANT 4: NATIVE GUI & WORKBENCHES ==================== -->
+  <g transform="translate(448, 206)">
+    <rect x="0" y="0" width="408" height="132" rx="10" fill="url(#quadBg)" stroke="#1F2737" stroke-width="1"/>
+    <rect x="0" y="18" width="3" height="30" rx="1.5" fill="#F59E0B"/>
+
+    <text x="18" y="25" class="mono" font-size="10.5" fill="#F59E0B" font-weight="600">04 · NATIVE GUI WORKBENCHES</text>
+    <text x="392" y="25" class="mono" font-size="10" fill="#6E7681" text-anchor="end">高帧率渲染 / 研发工具</text>
+    <text x="18" y="48" class="sans" font-size="15" font-weight="700" fill="#F0F6FC">高性能原生桌面与工程调试软件</text>
+    <text x="18" y="68" class="sans" font-size="12" fill="#8B949E">基于 egui 与 Bevy 引擎打造低延迟串口波形仪、XML/EXI 及证书工作台</text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(18, 86)">
+      <rect x="0" y="0" width="96" height="24" rx="5" class="pill-gold"/>
+      <text x="48" y="15.5" class="mono" font-size="11" fill="#FBBF24" text-anchor="middle">egui/eframe</text>
+
+      <rect x="104" y="0" width="92" height="24" rx="5" class="pill"/>
+      <text x="150" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Bevy Engine</text>
+
+      <rect x="204" y="0" width="92" height="24" rx="5" class="pill"/>
+      <text x="250" y="15.5" class="mono" font-size="11" fill="#C9D1D9" text-anchor="middle">Serial/Plot</text>
+
+      <rect x="304" y="0" width="84" height="24" rx="5" class="pill"/>
+      <text x="346" y="15.5" class="mono" font-size="11" fill="#9CA3AF" text-anchor="middle">X.509/EXI</text>
+    </g>
+  </g>
+</svg>
